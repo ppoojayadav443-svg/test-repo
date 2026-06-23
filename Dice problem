@@ -1,0 +1,16 @@
+import random
+
+print("Welcome to the game of rolling dice")
+
+while True:
+    choice = input("Press 'Enter' to roll th dice or 'a' to quit. ")
+    choice = choice.strip()  #To avoid small errors generated due to spaces
+    if choice == 'a':
+        print("Thanks for playing the game , 'Bye'")
+    elif choice == '':
+        number = random.randint(1,6)
+        print(f"Your number is {number}")
+    else:
+        print("Invalid input")
+
+print("Thanks for playing the game!!!")
