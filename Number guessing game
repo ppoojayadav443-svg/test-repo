@@ -1,0 +1,17 @@
+import random
+
+print("Welcome to the number guessing game.")
+num = random.randint(1,100)
+counter=0
+limit=10
+while counter<limit:
+    n= int(input(f"Attempt{counter+1}/{limit}-Enter the number."))
+    counter+=1
+    if n == num:
+        print("CONGRATULATIONS!! you have gussed the correct answer.")
+        break
+    elif n!= num:
+        print("Wrong choice try again. ")
+    else:
+        print("Invalid choice entered.")
+print("Thankyou for playing our game !! please visit us again for more guessing problems.")
